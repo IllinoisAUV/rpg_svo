@@ -77,3 +77,7 @@ ADD_EXECUTABLE(vo src/vo_node.cpp)
 TARGET_LINK_LIBRARIES(vo svo_visualizer)
 ADD_EXECUTABLE(benchmark src/benchmark_node.cpp)
 TARGET_LINK_LIBRARIES(benchmark svo_visualizer)
+
+
+install(DIRECTORY param/
+        DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/param)
